@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+
+<div class="container" id="info-container" ml>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center text-info">CONTACTA CON&nbsp;NOSOTROS<br></h2>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6" id="contact-box">
+            <p id="contact-text">Puedes contactarnos y darnos la oportunidad de conocer tus opiniones, compartir tus experiencias y recibir asesoría sobre tus beneficios, utilizando las opciones que hemos dispuesto para ti: </p>
+            <div class="info-box"><i class="bi bi-envelope-fill"></i><span class="text-uppercase text-info"> Email: </span><span>datafiltercg@gmail.com </span></div>
+            <!-- <div class="info-box"><i class="fa fa-phone-square my-info-icons"></i><span class="text-uppercase text-info">Celulares: </span><span>+57</span></div> -->
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 site-form">
+            <form id="my-form" [formGroup]='form' (ngSubmit)='save()'>
+                <div class="form-group"><label class="sr-only"  for="firstname"> Completo</label><input formControlName="name" class="border rounded-circle shadow form-control" type="text" id="firstname" name="firstname" placeholder="Nombre Completo" ></div>
+                <div class="form-group"><label class="sr-only"  for="email"></label><input formControlName="email"  class="shadow form-control" type="text" id="email" name="email"  placeholder="Correo"></div>
+                <div class="form-group"><label class="sr-only"  for="messages"></label><textarea formControlName="message" class="shadow form-control" name="messages"  placeholder="Comentario" rows="8"></textarea></div>
+                <button class="btn btn-light btn-lg shadow" id="form-btn" type="submit" style="background: rgb(152,152,152);">Enviar </button></form>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<app-footer></app-footer>
+
+
